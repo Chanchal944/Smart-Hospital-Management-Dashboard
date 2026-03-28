@@ -1,0 +1,120 @@
+.pharmacy-page {
+  padding: 20px;
+  background: #f4f6f9;
+  min-height: 100vh;
+}
+
+.pharmacy-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.add-btn {
+  background: linear-gradient(45deg, #4a82cc, #737eb1); /* ✅ FIXED */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+}
+.search-bar {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+/* TABLE */
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background: #1e293b;
+  color: white;
+}
+
+/* STATUS */
+.status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+.status.good {
+  background: #28a745;
+  color: white;
+}
+
+.status.warning {
+  background: #ffc107;
+}
+
+.status.danger {
+  background: #dc3545;
+  color: white;
+}
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 10px;
+  background: #007bff;
+  color: white;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .pharmacy-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+.modal-content input {
+  font-size: 14px;
+}
+.expired {
+  background: white!important;
+}
+
+.near-expiry {
+  background: white !important;
+}

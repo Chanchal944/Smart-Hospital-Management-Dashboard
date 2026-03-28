@@ -1,0 +1,281 @@
+.notifications-container {
+  padding: 20px;
+}
+
+.alert-icon {
+  background: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Top */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Bell */
+.bell {
+  position: relative;
+  font-size: 24px;
+}
+
+.badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 4px 7px;
+  font-size: 12px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.tabs button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 20px;
+  background: #ddd;
+}
+
+.tabs .active {
+  background: #007bff;
+  color: white;
+}
+
+/* List */
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Card */
+.notification-card {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.notification-card.unread {
+  border-left: 5px solid #007bff;
+}
+
+.notification-card.read {
+  opacity: 0.6;
+}
+
+.notification-card.emergency {
+  border-left: 5px solid red;
+  background: #fff5f5;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions .read {
+  background: #28a745;
+  color: white;
+}
+
+.actions .delete {
+  background: #dc3545;
+  color: white;
+}
+
+.actions button {
+  padding: 6px 10px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .notification-card {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .actions {
+    justify-content: flex-end;
+  }
+}.notifications-container {
+  padding: 20px;
+}
+
+/* Header */
+.alert-icon {
+  background: #007bff;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Top */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Bell */
+.bell {
+  position: relative;
+  font-size: 22px;
+}
+
+.badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 3px 7px;
+  font-size: 11px;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+  flex-wrap: wrap;
+}
+
+.tabs button {
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  background: #ddd;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.tabs .active {
+  background: #007bff;
+  color: white;
+}
+
+/* List */
+.notification-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* 🔥 SMALLER CARD */
+.notification-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 14px;
+  border-radius: 8px;
+  background: #f9f9f9;
+  font-size: 14px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+/* Left border */
+.notification-card.unread {
+  border-left: 4px solid #007bff;
+}
+
+.notification-card.read {
+  opacity: 0.6;
+}
+
+.notification-card.emergency {
+  border-left: 4px solid red;
+  background: #fff5f5;
+}
+
+/* Text */
+.notification-card h4 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.notification-card p {
+  margin: 4px 0;
+  font-size: 13px;
+}
+
+.notification-card span {
+  font-size: 11px;
+  color: gray;
+}
+
+/* 🔥 ACTION BUTTONS SAME SIZE */
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  min-width: 70px;
+  height: 30px;
+  padding: 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Buttons */
+.actions .read {
+  background: #28a745;
+  color: white;
+}
+
+.actions .delete {
+  background: #dc3545;
+  color: white;
+}
+
+/* Hover */
+.actions .read:hover {
+  background: #218838;
+}
+
+.actions .delete:hover {
+  background: #c82333;
+}
+
+/* 📱 Responsive */
+@media (max-width: 768px) {
+  .notification-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .actions {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .actions button {
+    min-width: 65px;
+    height: 28px;
+    font-size: 11px;
+  }
+}

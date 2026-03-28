@@ -1,0 +1,141 @@
+.lab-container {
+  padding: 20px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* DASHBOARD CARDS */
+.cards {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  padding: 15px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}
+
+.card.total {
+  background: #007bff;
+}
+
+.card.pending {
+  background: orange;
+}
+
+.card.completed {
+  background: green;
+}
+
+/* FORM */
+.lab-form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.lab-form input,
+.lab-form select {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.lab-form button {
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+}
+
+/* FILTERS */
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.filters input,
+.filters select {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* TABLE */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.lab-table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse;
+}
+
+.lab-table th {
+  background: #1e293b;
+  color: white;
+}
+
+.lab-table th,
+.lab-table td {
+  padding: 10px;
+  text-align: center;
+}
+
+/* STATUS */
+.status {
+  padding: 5px 10px;
+  border-radius: 6px;
+  color: white;
+}
+
+.status.pending {
+  background: orange;
+}
+
+.status.completed {
+  background: green;
+}
+
+/* BUTTONS */
+button {
+  padding: 5px 10px;
+  margin: 3px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete {
+  background: red;
+  color: white;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+
+  .lab-form {
+    grid-template-columns: 1fr;
+  }
+
+  .filters {
+    flex-direction: column;
+  }
+}

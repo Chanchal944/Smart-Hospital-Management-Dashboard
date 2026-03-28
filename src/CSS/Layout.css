@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* MAIN */
+.main-content {
+  transition: 0.3s;
+  min-height: 100vh;
+  background: #f4f7fb;
+}
+
+/* SIDEBAR SPACE */
+.main-content.open {
+  margin-left: 250px;
+}
+
+.main-content.closed {
+  margin-left: 70px;
+}
+
+/* CONTENT */
+.content-area {
+  padding: 20px;
+}
+
+/* MOBILE FIX */
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0 !important;
+  }
+}

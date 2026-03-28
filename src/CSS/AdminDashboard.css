@@ -1,0 +1,164 @@
+.dashboard-container {
+  padding: 20px;
+  min-height: 100vh;
+  background: #f4f6f9;
+  font-family: Arial, sans-serif;
+}
+
+/* TITLE */
+.dashboard-title {
+  margin-bottom: 25px;
+  text-align: center;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* CARDS */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 22px;
+  margin: 0;
+}
+
+/* CARD COLORS */
+.blue { background: linear-gradient(135deg, #007bff, #4da3ff); }
+.green { background: linear-gradient(135deg, #28a745, #5cd67a); }
+.yellow { background: linear-gradient(135deg, #ffc107, #ffe08a); color: #000; }
+.red { background: linear-gradient(135deg, #dc3545, #ff6b6b); }
+
+/* CHART BOX */
+.chart-box {
+  margin-top: 30px;
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.chart-box h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  color: #333;
+}
+
+/* CHART WRAPPER */
+.chart-wrapper {
+  width: 100%;
+  height: 320px;
+}
+
+/* FOOTER */
+.footer {
+  background: #1e293b;
+  color: white;
+  padding: 14px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.footer a {
+  color: #4da3ff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart-wrapper {
+    height: 280px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .dashboard-title {
+    font-size: 20px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 20px;
+  }
+
+  .chart-box {
+    padding: 15px;
+  }
+
+  .chart-wrapper {
+    height: 250px;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 8px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .dashboard-container {
+    padding: 15px;
+  }
+
+  .card p {
+    font-size: 18px;
+  }
+
+  .chart-wrapper {
+    height: 220px;
+  }
+
+  .footer {
+    font-size: 12px;
+  }
+}
